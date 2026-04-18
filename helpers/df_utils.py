@@ -5,7 +5,7 @@ from pyspark.sql.types import StructType
 from .models import SourceType
 
 
-def tag_source_type(df: DataFrame, source_type: SourceType, column_name: str = "source_type"):
+def tag_source_type(df: DataFrame, source_type: SourceType, column_name: str = "source_type") -> DataFrame:
     """
     Tags a DataFrame with a constant value to indicate the data origin
     """
